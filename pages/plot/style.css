@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+#concon {
+    margin: 50px;
+    width: 300px;
+    height: calc(100vh - 100px);
+}
+
+#matchCon {
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: #f0f0f0;
+    overflow-y: auto;
+}
+
+#buttonCon {
+    width: 100%;
+    height: 30px;
+    background-color: #a2a2a2;
+    display: flex;
+    justify-content: center;
+}
+
+.matchButton {
+    margin: 5px;
+    white-space: nowrap;
+}
+
+.match {
+    width: calc(100% - 4px);
+    height: calc(50px - 4px);
+    margin-bottom: 5px;
+    border: #000 2px solid;
+    text-align: center;
+    line-height: calc(50px - 4px);
+    font-size: 16px;
+}
+
+#plotCon {
+    width: calc(100vh - 130px);
+    height: calc(100vh - 100px);
+    margin-top: 50px;
+    background-color: aqua;
+}
+
+#plot {
+    width: 100%;
+    height: calc(100% - 30px);
+    background-color: #f0f0f0;
+}
+
+#timeline {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(241, 140, 17);
+    display: flex;
+}
+
+#timeline input {
+    width: calc(100% - 30px);
+    background: aqua;
+}
+
+#timeline #timelineValue {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#filename {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}

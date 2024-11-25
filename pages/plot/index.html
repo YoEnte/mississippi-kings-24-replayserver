@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./plotter.js"></script>
+        <script src="./script.js"></script>
+        <script>document.addEventListener('DOMContentLoaded', domOnload);</script>
+    </head>
+    <body>
+        <div id="concon">
+            <div id="matchCon">
+
+            </div>
+            <div id="buttonCon">
+                <button class="matchButton" onclick="requestMatchList()">reload all</button>
+                <button class="matchButton" onclick="refreshMatch()">reload match</button>
+                <button class="matchButton" onclick="loadTurn()">reload turn</button>
+            </div>
+        </div>
+        <div id="plotCon">
+            <div id="plot"></div>
+            <div id="timeline">
+                <input type="range" min="0" max="0" value="0" onchange="timelineChange(this)" tabindex="1" list="steplist">
+                <datalist id="steplist"></datalist>
+                <div id="timelineValue">0</div>
+            </div>
+            <div id="filename"></div>
+        </div>
+    </body>
+</html>
